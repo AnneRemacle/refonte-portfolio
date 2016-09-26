@@ -1,0 +1,166 @@
+/* Refonte-Portfolio
+ *
+ * /sass/components/presentation.scss - basic styles for section presentation
+ *
+ * coded by Anne
+ * started at 22/09/2016
+ */
+
+ .presentation {
+ 	position: relative;
+ 	
+ 	&__figure {
+		width: 33%;
+		margin: 5em 0 5em 20.48%;
+ 	}
+ 	&__img {
+		width: 100%;
+ 	}
+ 	&__title {
+ 		background: $bgColor;
+ 		padding: 1em;
+ 		font-size: 2em;
+ 		position: absolute;
+ 		top: 1.7em;
+ 		left: 43.05%;
+
+ 		&--big {
+			font-size: 2.5em;
+ 		}
+ 		&--deleted {
+			font-size: .8em;
+			text-decoration: line-through;
+ 		}
+ 	}
+ 	&__bloc {
+		width: 35.41%;
+		display: inline-block;
+		vertical-align: top;
+		margin: 5em auto;
+		
+ 	}
+ 	&__bloc:nth-of-type(1) {
+ 		margin-right: 5%;
+ 		margin-left: 11.944%;
+ 	}
+ 	&__text {
+ 		font-size: 1.1em;
+
+ 	}
+ }
+
+ .background {
+ 	background-color: $secondBgColor;
+ }
+
+ @media screen and (max-width: 1200px) {
+	.presentation {
+		&__title {
+			font-size: 1.8em;
+		}
+	}
+ }
+
+ @media screen and (max-width: 1024px) {
+	.presentation {
+		&__figure {
+			width: 40%;
+		}
+		&__title {
+			padding: 1em;
+	 		font-size: 1.8em;
+	 		position: absolute;
+	 		top: 1.7em;
+	 		left: 50%;
+			&--big {
+				font-size: 2.4em;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.presentation {
+		&__title {
+ 		font-size: 1.5em;
+	 		&--big {
+				font-size: 2.2em;
+	 		}
+	 		&--deleted {
+				font-size: .8em;
+				text-decoration: line-through;
+	 		}
+ 		}
+	}	
+}
+
+@media screen and (max-width: 768px) {
+	.presentation {
+		&__figure {
+			width: 60%;
+			margin: 5em 20% 1em;
+		}
+
+		&__title {
+			display: block;
+			font-size: 1.5em;
+			position: relative;
+			top: 0;
+			left: 0;
+			text-align: center;
+			margin-bottom: 3em;
+			
+		}
+		&__bloc {
+			display: block;
+			width: 75%;
+		}
+		&__bloc:nth-of-type(1) {
+			padding: 5em 0 0;
+ 		}
+ 		&__bloc:nth-of-type(2) {
+			padding: 0 0 5em;
+ 		}
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.presentation {
+		&__figure {
+			width: 70%;
+			margin: 5em 15% 1em;
+		}
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.presentation {
+		&__figure {
+			width: 55%;
+			margin: 5em 22.5% 1em;
+		}
+
+		&__title {
+			font-size: 1.1em;
+			margin-bottom: 5em;
+		}
+		&__bloc {
+			display: block;
+			width: 80%;
+		}
+		&__bloc:nth-of-type(1) {
+			padding: 5em 0 0;
+ 		}
+ 		&__bloc:nth-of-type(2) {
+			padding: 0 0 5em;
+ 		}
+	}
+}
+
+@media screen and (max-width: 400px) {
+	
+}
+
+@media screen and (max-width: 375px) {
+	
+}
