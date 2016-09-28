@@ -333,12 +333,17 @@ body {
   width: 35.41%;
   display: inline-block;
   vertical-align: top;
-  margin: 5em auto;
+  margin: 5em auto 0;
 }
 
 .presentation__bloc:nth-of-type(1) {
   margin-right: 5%;
   margin-left: 11.944%;
+  padding-bottom: 5em;
+}
+
+.presentation__bloc:nth-of-type(2) {
+  padding-bottom: 5em;
 }
 
 .presentation__text {
@@ -486,10 +491,167 @@ body {
   background: url(../assets/images/baobab.jpg) center no-repeat;
 }
 
-.projets__single:nth-of-type(2) {
+.projets__single:nth-of-type(3) {
   background: url(../assets/images/kdna.jpg) center no-repeat;
 }
 
-.projets__single:nth-of-type(3) {
+.projets__single:nth-of-type(2) {
   background: url(../assets/images/cv-linkedin.jpg) center no-repeat;
+}
+
+@media screen and (max-width: 1024px) {
+  .projets__single {
+    width: 49%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .projets__single {
+    width: 100%;
+  }
+}
+
+/* Refonte-Portfolio
+ *
+ * /sass/components/footer.scss - basic styles for footer
+ *
+ * coded by Anne
+ * started at 22/09/2016
+ */
+.footer {
+  background: transparent url(../assets/images/bg-footer.jpg) center no-repeat;
+  height: 45em;
+  color: white;
+  padding: 2em 0 5em;
+}
+
+.footer__title {
+  font-size: 3.375em;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.footer__form {
+  width: 46%;
+  margin: 2em auto;
+}
+
+.form__group {
+  margin-bottom: 2em;
+}
+
+.form__label {
+  cursor: text;
+  margin-bottom: 0.4em;
+  font-size: 1.2em;
+  -webkit-transform: translateY(-2em);
+  -moz-transform: translateY(-2em);
+  -ms-transform: translateY(-2em);
+  -o-transform: translateY(-2em);
+  transform: translateY(-2em);
+  display: block;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.form__input {
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  display: block;
+  width: 100%;
+  background: transparent;
+  padding: 0.5em 0 0.8em;
+  font-size: 1.2em;
+  border: none;
+  border-bottom: 1px solid #EFEFE5;
+  color: #EFEFE5;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.form__input:focus {
+  outline: none;
+}
+
+.form__input:focus + .form__label {
+  color: #DFDDCE;
+  font-size: 1em;
+  text-transform: uppercase;
+  -webkit-transform: translateY(-5em);
+  -moz-transform: translateY(-5em);
+  -ms-transform: translateY(-5em);
+  -o-transform: translateY(-5em);
+  transform: translateY(-5em);
+}
+
+.form__input:valid + .form__label {
+  color: #DFDDCE;
+  font-size: 1em;
+  text-transform: uppercase;
+  -webkit-transform: translateY(-5em);
+  -moz-transform: translateY(-5em);
+  -ms-transform: translateY(-5em);
+  -o-transform: translateY(-5em);
+  transform: translateY(-5em);
+}
+
+.form__button {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  border: 1px solid #EFEFE5;
+  border-radius: 15px;
+  padding: 0.8em 1em;
+  color: #EFEFE5;
+  background: transparent;
+}
+
+.form__button:focus, .form__button:hover {
+  background: #EFEFE5;
+  color: #59564E;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+@media screen and (max-width: 1024px) {
+  .footer__title {
+    font-size: 3em;
+  }
+  .footer__form {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer__title {
+    font-size: 2.8em;
+  }
+  .footer__form {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .footer__title {
+    font-size: 2.3em;
+  }
+  .footer__form {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .footer__title {
+    font-size: 1.8em;
+  }
+  .footer__form {
+    width: 75%;
+  }
 }

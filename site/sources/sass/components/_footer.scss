@@ -1,0 +1,150 @@
+/* Refonte-Portfolio
+ *
+ * /sass/components/footer.scss - basic styles for footer
+ *
+ * coded by Anne
+ * started at 22/09/2016
+ */
+
+ .footer {
+ 	background: transparent url(../assets/images/bg-footer.jpg) center no-repeat;
+ 	height: 45em;
+ 	color: white;
+ 	padding: 2em 0 5em;
+ 	&__title {
+		font-size: 3.375em;
+		text-align: center;
+		margin-bottom: 1em;
+ 	}
+ 	&__form {
+ 		width: 46%;
+ 		margin: 2em auto;
+ 	}
+ }
+
+ .form {
+	&__group {
+		margin-bottom: 2em;	
+ 	}
+ 	&__label {
+ 		cursor: text;
+		margin-bottom: 0.4em;
+		font-size: 1.2em;
+		-webkit-transform: translateY(-2em);
+		   -moz-transform: translateY(-2em);
+		    -ms-transform: translateY(-2em);
+		     -o-transform: translateY(-2em);
+		        transform: translateY(-2em);
+ 		display: block;
+ 		-webkit-transition: all .2s ease-in-out;
+		   -moz-transition: all .2s ease-in-out;
+		    -ms-transition: all .2s ease-in-out;
+		     -o-transition: all .2s ease-in-out;
+		        transition: all .2s ease-in-out;
+ 		
+ 	}
+
+ 	&__input {
+ 		font-family: $futura;
+ 		display: block;
+ 		width: 100%;
+ 		background: transparent;
+ 		padding: 0.5em 0 0.8em;
+ 		font-size: 1.2em;
+ 		border: none;
+ 		border-bottom: 1px solid $bgColor;
+ 		color: $bgColor;
+ 		-webkit-transition: all .2s ease-in-out;
+		   -moz-transition: all .2s ease-in-out;
+		    -ms-transition: all .2s ease-in-out;
+		     -o-transition: all .2s ease-in-out;
+		        transition: all .2s ease-in-out;
+ 	}
+	&__input:focus {
+		outline: none;
+	}
+	&__input:focus + &__label {
+		color: $secondBgColor;
+		font-size: 1em;
+		text-transform: uppercase;
+		
+		-webkit-transform: translateY(-5em);
+		   -moz-transform: translateY(-5em);
+		    -ms-transform: translateY(-5em);
+		     -o-transform: translateY(-5em);
+		        transform: translateY(-5em);
+	}
+	&__input:valid + &__label {
+		color: $secondBgColor;
+		font-size: 1em;
+		text-transform: uppercase;	
+      	-webkit-transform: translateY(-5em);
+      	   -moz-transform: translateY(-5em);
+      	    -ms-transform: translateY(-5em);
+      	     -o-transform: translateY(-5em);
+      	        transform: translateY(-5em);
+	}
+
+	&__button {
+		text-transform: uppercase;
+		font-size: 1.5em;
+		border: 1px solid $bgColor;
+		border-radius: 15px;
+		padding: 0.8em 1em;
+		color: $bgColor;
+		background: transparent;
+ 	}
+ 	&__button:focus, &__button:hover {
+ 		background: $bgColor;
+ 		color: $textColor;
+ 		-webkit-transition: all .2s ease-in-out;
+		   -moz-transition: all .2s ease-in-out;
+		    -ms-transition: all .2s ease-in-out;
+		     -o-transition: all .2s ease-in-out;
+		        transition: all .2s ease-in-out;
+ 	}
+}
+
+@media screen and (max-width: 1024px) {
+ 	.footer {
+ 		&__title {
+			font-size: 3em;
+ 		}
+ 		&__form {
+ 			width: 60%;
+ 		}
+ 	}
+ }
+
+ @media screen and (max-width: 768px) {
+ 	.footer {
+ 		&__title {
+			font-size: 2.8em;
+ 		}
+ 		&__form {
+ 			width: 70%;
+ 		}
+ 	}
+ }
+
+@media screen and (max-width: 500px) {
+	.footer {
+		&__title {
+		font-size: 2.3em;
+		}
+		&__form {
+			width: 75%;
+		}
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.footer {
+		&__title {
+		font-size: 1.8em;
+		}
+		&__form {
+			width: 75%;
+		}
+	}
+}
