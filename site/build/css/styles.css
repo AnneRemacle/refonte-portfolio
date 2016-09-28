@@ -513,6 +513,105 @@ body {
 
 /* Refonte-Portfolio
  *
+ * /sass/components/header.scss - basic styles for header
+ *
+ * coded by Anne
+ * started at 22/09/2016
+ */
+.projects__list {
+  width: 60%;
+  margin: 5em auto 8em;
+}
+
+.projects__single {
+  position: relative;
+  margin-bottom: 5em;
+}
+
+.projects__figure {
+  display: inline-block;
+  width: 100%;
+}
+
+.projects__img {
+  display: inline-block;
+  width: 50%;
+}
+
+.projects__bloc {
+  background: #EFEFE5;
+  padding: 2em;
+  position: absolute;
+  top: 8em;
+  left: 40%;
+}
+
+.projects__title {
+  font-size: 2em;
+}
+
+.projects__single:nth-child(even) .projects__img {
+  margin-left: 50%;
+}
+
+.projects__single:nth-child(even) .projects__bloc {
+  left: 25%;
+}
+
+@media screen and (max-width: 1024px) {
+  .projects__bloc {
+    top: 5em;
+  }
+  .projects__single:nth-child(even) .projects__bloc {
+    left: 15%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .projects__list {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .projects__bloc {
+    top: 4em;
+  }
+  .projects__single:nth-child(even) .projects__bloc {
+    left: 5%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .projects__figure {
+    display: block;
+  }
+  .projects__img {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .projects__bloc {
+    width: 80%;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .projects__single:nth-child(even) .projects__img {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .projects__title {
+    font-size: 1.3em;
+  }
+}
+
+/* Refonte-Portfolio
+ *
  * /sass/components/footer.scss - basic styles for footer
  *
  * coded by Anne
