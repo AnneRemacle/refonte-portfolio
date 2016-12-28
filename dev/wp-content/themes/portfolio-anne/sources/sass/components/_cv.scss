@@ -150,3 +150,99 @@ a.infos__item {
         margin-bottom: .75em;
     }
 }
+
+@media screen and (max-width: 1280px) {
+    .item {
+        &__name:after {
+            margin-right: 30%;
+        }
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .item {
+        &__name:after {
+            margin-right: 20%;
+        }
+    }
+}
+
+@media screen and (max-width: 965px) {
+    .experience, .formation, .competences, .loisirs {
+        display: block;
+        width: 100%;
+    }
+    .item {
+        &__name:after {
+            margin-right: 60%;
+        }
+    }
+
+    .cv {
+        &__list {
+            &--title {
+                text-align: left;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .cv {
+        &__infos {
+            font-size: .9em;
+        }
+    }
+}
+
+@media screen and (max-width: 863px) {
+    .cv {
+        &__head {
+            width: 100%;
+            display: block;
+        }
+        &__figure {
+            display: inline-block;
+            width: 30%;
+            margin-right: 10%;
+            vertical-align: middle;
+        }
+        &__infos {
+            display: inline-block;
+            width: 50%;
+            vertical-align: middle;
+        }
+    }
+    .second {
+        display: block;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .cv {
+        &__figure {
+            display: block;
+            width: 50%;
+        }
+        &__infos {
+            display: block;
+        }
+    }
+    .second {
+        display: block;
+        width: 100%;
+    }
+    .item {
+        &__name:after {
+            margin-right: 50%;
+        }
+    }
+}
+@media screen and (max-width: 500px) {
+
+    .item {
+        &__name:after {
+            margin-right: 40%;
+        }
+    }
+}
