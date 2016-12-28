@@ -138,6 +138,20 @@
 			top: 15em;
 		}
 	}
+
+	.second-header {
+		&__nav {
+			margin-right: 5%;
+		}
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.second-header {
+		&__nav {
+			width: 30%;
+		}
+	}
 }
 
 @media screen and (max-width: 768px) {
@@ -152,6 +166,17 @@
 
 		&__nav {
 			font-size: 1.6em;
+		}
+	}
+}
+
+@media screen and (max-width: 680px) {
+	.second-header {
+		&__logo {
+			margin-left: 10%;
+		}
+		&__nav {
+			width: 40%;
 		}
 	}
 }
@@ -182,6 +207,15 @@
 		&__nav {
 			font-size: 1.2em;
 			top: 12em;
+		}
+	}
+
+	.second-header {
+		&__logo {
+			margin-left: 10%;
+		}
+		&__nav {
+			width: 50%;
 		}
 	}
 }

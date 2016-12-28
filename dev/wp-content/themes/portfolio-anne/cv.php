@@ -9,7 +9,7 @@
     <section class="cv cv-section clearfix">
         <h2 class="sro">Curiculum Vitae de Anne Remacle</h2>
 
-        <section class="cv__head">
+        <section class="cv__head" data-aos="fade-up">
             <h3 class="cv__name">Anne Remacle</h3>
 
             <figure class="cv__figure">
@@ -27,7 +27,7 @@
 
         <div class="second">
             <div class="columns">
-                <section class="experience cv-section">
+                <section class="experience cv-section" data-aos="fade-up">
                     <h3 class="cv__sectionTitle cv__sectionTitle--exp">Expériences</h3>
                     <ul class="cv__list">
                      	<li class="cv__list--item item">
@@ -40,7 +40,7 @@
                      	<li class="cv__list--item item"><strong class="item__title">Secrétaire</strong><span class="item__date"><time datetime="2010">2010</time> - <time datetime="2011">2011</time></span>Étude de M<sup>e</sup> Franchimont, Liège</li>
                     </ul>
                 </section>
-                <section class="formation cv-section">
+                <section class="formation cv-section" data-aos="fade-up">
                     <h3 class="cv__sectionTitle cv__sectionTitle--formation">Formation</h3>
                     <ul class="cv__list">
                      	<li class="cv__list--item item"><strong class="item__title">Baccalauréat en Techniques infographiques, option Web </strong><span class="item__date"><time datetime="2014">2014</time> - <time datetime="2017">2017</time></span>Haute École de la Province de Liège, HEPL (anciennement INPRES)</li>
@@ -50,7 +50,7 @@
                 </section>
             </div>
             <div class="columns">
-                <section class="competences cv-section">
+                <section class="competences cv-section" data-aos="fade-up">
                     <h3 class="cv__sectionTitle cv__sectionTitle--comp">Compétences</h3>
                     <section class="competences__list languages">
                         <h4 class="cv__list--title">Langages</h4>
@@ -114,7 +114,7 @@
                     </ul>
                 </section>
                 </section>
-                <section class="loisirs cv-section">
+                <section class="loisirs cv-section" data-aos="fade-up">
                     <h4 class="cv__sectionTitle cv__sectionTitle--like">Centres d'intérêt</h4>
                     <ul class="loisirs__list">
                      	<li class="loisirs__list-item item">Jeu de rôles grandeur nature</li>
