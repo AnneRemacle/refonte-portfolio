@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="descritpion" content="Bienvenue sur le portfolio de Anne Remacle, étudiante en 3e année en Techniques Infographiques option Web à la HEPL.">
+		<meta name="keywords" content="portfolio, web, Anne Remacle" />
+		<meta author="Anne-Remacle">
+
+		<link rel="stylesheet" media="all" href="css/styles.css" />
+		<title>Portfolio online de Anne Remacle</title>
+	</head>
+	<body>
+		<header class="header">
+			<h1 class="sro" role="heading" aria-level="1">Bienvenue sur le portfolio de Anne Remacle</h1>
+			<a href="index.html" title="Retour à la page d'acceuil du portfolio de Anne Remacle" class="header__logo">Accueil</a>
+
+			<nav class="header__nav">
+				<h2 class="sro" role="heading" aria-level="2">Navigation principale</h2>
+				<a href="html/projets.html" title="Voir les projets réalisés par Anne Remacle" class="header__link">Projets</a>
+				<a href="html/cv.html" title="Voir le CV de Anne Remacle" class="header__link">CV</a>
+			</nav>
+		</header>
+
+		<section class="presentation">
+			<h2 class="sro" role="heading" aria-level="2">Anne Remacle</h2>
+
+			<figure class="presentation__figure">
+				<img class="presentation__img" src="assets/images/portrait.jpg" alt="Portrait de Anne Remacle">
+			</figure>
+
+			<p class="presentation__title">
+				<span class="presentation__title--big"> Bonjour&nbsp;! </span><br>
+                Je m'appelle Anne Remacle<br>
+                <span class="presentation__title--deleted">j'élève des licornes</span><br>
+                je fais des sites internet
+			</p>
+
+			<div class="background">
+				<div class="presentation__bloc">
+				<p class="presentation__text">
+					Intégratrice de génie, fabricante de livres de l'espace, couturière talentueuse sur mon temps libre, je vis à Liège et je suis passionnée par les chats et l'orthographe, et aussi le web sinon on ne serait pas là.
+				</p>
+				<p class="presentation__text">
+					Comme dit plus haut, je m’appelle Anne, j’ai 26 ans (et toutes mes dents), et je suis actuellement en 3<sup>e</sup> année en Techniques Infographiques option Web à la HEPL.
+				</p>
+			</div>
+			<div class="presentation__bloc">
+				<p class="presentation__text">
+                    Je code des super sites web en utilisant <abbr title="Hypertext Markup Language">HTML</abbr>, <abbr title="Cascading Style Sheets">CSS</abbr>, <abbr title="Block, Element, Modifier">BEM</abbr>, <abbr title="Syntactically Awesome Stylesheets">Sass</abbr>, ITCSS, JavaScript et PHP. Je fais même un peu de Wordpress parfois (&nbsp;Si si, je vous jure&nbsp;).
+                </p>
+			</div>
+			</div>
+		</section>
+		<section class="projets section">
+			<h2 class="section__title sro">Mes trois derniers projets</h2>
+			<ul class="projets__list">
+				<li class="projets__single">
+					<a class="projets__single--title" href="html/baobab.html" title="Voir la fiche technique du projet sur un Baobab">Sur un Baobab</a>
+				</li>
+				<li class="projets__single">
+					<a class="projets__single--title" href="html/linkedin.html" title="Voir la fiche technique du projet CV Linkedin">CV Linkedin</a>
+				</li>
+				<li class="projets__single">
+					<a class="projets__single--title" href="html/kdna.html" title="Voir la fiche technique du projet KDNA">KDNA</a>
+				</li>
+			</ul>
+		</section>
+
+		<footer>
+			<section class="footer">
+				<h2 class="footer__title">On reste en contact?</h2>
+
+				<form action="#" method="post" class="footer__form">
+					<div class="form__group">
+						<label for="name" class="">
+						<input type="text" name="name" id="name"  class="form__input" required />
+						<div class="form__label">Votre nom</div>
+						</label>
+					</div>
+					<div class="form__group">
+						<label for="email">
+						<input type="text" name="email" id="email"  class="form__input" required />
+						<div class="form__label">Votre email</div>
+						</label>
+						
+					</div>
+					<div class="form__group">
+						<label for="message">
+						<input type="text" name="message" id="message"  class="form__input" required />
+						<div class="form__label">Votre message</div>
+						</label>
+						
+					</div>
+					
+					<button type="submit" class="form__button" value="Envoyez votre message">C'est parti!</button>
+					
+				</form>
+			</section>
+		</footer>
+
+	</body>
+</html>

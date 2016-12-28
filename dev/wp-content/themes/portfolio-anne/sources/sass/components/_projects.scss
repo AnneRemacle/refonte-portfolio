@@ -1,0 +1,121 @@
+/* Refonte-Portfolio
+ *
+ * /sass/components/header.scss - basic styles for header
+ *
+ * coded by Anne
+ * started at 22/09/2016
+ */
+
+ .projects {
+	&__list {
+		width: 60%;
+		margin: 5em auto 8em;
+	}
+	&__single {
+		position: relative;
+		margin-bottom: 5em;
+	}
+	&__figure {
+		display: inline-block;
+		width: 100%;
+	}
+	&__img {
+		display: inline-block;
+		width: 50%;
+	}
+	&__bloc {
+		background: $bgColor;
+		padding: 2em;
+		position: absolute;
+		top: 8em;
+		left: 40%;
+	}
+	&__title {
+		font-size: 2em;
+	}
+	&__more {
+		text-decoration: none;
+		text-transform: uppercase;
+		color: $textColor;
+		display: inline-block;
+		padding: 1em 0 .2em;
+		border-bottom: 1px solid $bgColor;
+		-webkit-transition: all .25s ease;
+		   -moz-transition: all .25s ease;
+		    -ms-transition: all .25s ease;
+		     -o-transition: all .25s ease;
+		        transition: all .25s ease;
+	}
+	&__more:hover {
+		border-bottom: 1px solid $textColor;	
+	}
+	
+	&__single:nth-child(even) &__img {
+		margin-left: 50%;	
+	}
+	&__single:nth-child(even) &__bloc {
+		left: 25%;	
+	}
+ }
+
+@media screen and (max-width: 1024px) {
+	.projects {
+		&__bloc {
+			top: 5em;
+		}
+		&__single:nth-child(even) &__bloc {
+			left: 15%;	
+		}
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.projects {
+		&__list {
+			width: 80%;
+		}	
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.projects {
+		&__bloc {
+			top: 4em;
+		}
+		&__single:nth-child(even) &__bloc {
+			left: 5%;	
+		}
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.projects {
+		&__figure {
+			display: block;
+		}
+		&__img {
+			display: block;
+			width: 80%;
+			margin: 0 auto;
+		}
+		&__bloc {
+			width: 80%;
+			position: relative;
+			top:0;
+			left:0;
+			margin: 0 auto;
+			text-align: center;	
+		}
+		&__single:nth-child(even) &__img {
+		margin: 0 auto;	
+	}
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.projects {
+		&__title {
+			font-size: 1.3em;
+		}
+	}
+}

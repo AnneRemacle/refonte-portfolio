@@ -1,0 +1,1062 @@
+/* Refonte-Portfolio
+ *
+ * /sass/styles.scss - Main stylesheet
+ *
+ * coded by Anne
+ * started at 22/09/2016
+ */
+/* Refonte-Portfolio
+ *
+ * /sass/settings/colors.scss - Color variables
+ *
+ * coded by Anne
+ * started at 22/09/2016
+ */
+/* Refonte-Portfolio
+ *
+ * /sass/settings/fonts.scss - fonts definition
+ *
+ * coded by Anne
+ * started at 22/09/2016
+ */
+/* Portfolio
+ *
+ * /sass/tools/_utils.scss - Small utilities
+ *
+ * coded by Anne
+ * started at 10/05/2016
+ */
+.hidden {
+  display: none;
+}
+
+.sro {
+  position: absolute;
+  top: -99999px;
+  left: -99999px;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/* Refonte-Portfolio
+ *
+ * /sass/generic/meyer-reset.scss - Meyer reset
+ *
+ * coded by Anne
+ * started at 22/09/2016
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Refonte-Portfolio
+ *
+ * /sass/generic/box-sizing.scss - box sizing definition
+ *
+ * coded by Anne
+ * started at 22/09/2016
+ */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+/* Refonte-Portfolio
+ *
+ * /sass/base/home.scss - basic styles
+ *
+ * coded by Anne
+ * started at 22/09/2016
+ */
+body {
+  background-color: #EFEFE5;
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  color: #59564E;
+  line-height: 1.4;
+}
+
+.sro {
+  text-indent: -9999px;
+}
+
+/* Refonte-Portfolio
+ *
+ * /sass/components/header.scss - basic styles for header
+ *
+ * coded by Anne
+ * started at 22/09/2016
+ */
+.header {
+  background: transparent url(../assets/images/couverture.jpg) center no-repeat;
+  background-size: cover;
+  height: 45.81em;
+  position: relative;
+}
+
+.header__logo {
+  display: block;
+  position: absolute;
+  top: 13em;
+  left: 6.944%;
+  background: transparent url(../assets/images/logo.png) center no-repeat;
+  text-indent: -9999px;
+  -webkit-background-size: contain;
+  background-size: contain;
+  width: 40.972%;
+  height: 10.625em;
+}
+
+.header__nav {
+  position: absolute;
+  top: 17em;
+  text-align: center;
+  width: 100%;
+  font-size: 2em;
+}
+
+#menu-first .menu-item {
+  display: inline-block;
+  margin: 0 4.16%;
+}
+
+#menu-first .menu-item a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#menu-first .menu-item a:after {
+  content: '';
+  display: block;
+  margin: 0.625em auto 0;
+  height: 0.125em;
+  width: 0px;
+  background: transparent;
+  transition: width .3s ease, background-color .5s ease;
+}
+
+#menu-first .menu-item a:hover:after, #menu-first .menu-item a:focus:after, #menu-first .menu-item a:active:after {
+  width: 100%;
+  background: white;
+}
+
+.second-header {
+  box-shadow: 0.5px 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.2);
+}
+
+.second-header__logo {
+  display: inline-block;
+  background: transparent url(../assets/images/logo-black.png) center no-repeat;
+  text-indent: -9999px;
+  -webkit-background-size: contain;
+  background-size: contain;
+  width: 20%;
+  height: 3.5em;
+  margin: 2em 0;
+  vertical-align: middle;
+}
+
+.second-header__nav {
+  display: inline-block;
+  width: 25%;
+  vertical-align: middle;
+  float: right;
+  font-size: 1.6em;
+  margin-top: 1.5em;
+}
+
+#menu-header .menu-item {
+  display: inline-block;
+  margin: 0 10%;
+}
+
+#menu-header .menu-item a {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+}
+
+#menu-header .menu-item a:after {
+  content: '';
+  display: block;
+  margin: 0.1em auto 0;
+  height: 0.1em;
+  width: 0px;
+  background: transparent;
+  transition: width .3s ease, background-color .5s ease;
+}
+
+#menu-header .menu-item a:hover:after, #menu-header .menu-item a:focus:after, #menu-header .menu-item a:active:after, #menu-header .current-menu-item a:after {
+  width: 100%;
+  background: black;
+}
+
+@media screen and (max-width: 1024px) {
+  .header__logo {
+    width: 39%;
+    height: 8.875em;
+  }
+  .header__nav {
+    font-size: 1.875em;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .header {
+    height: 37.5em;
+  }
+  .header__logo {
+    top: 11.5em;
+  }
+  .header__nav {
+    font-size: 1.7em;
+    top: 15em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    height: 32.1875em;
+  }
+  .header__logo {
+    width: 35%;
+    left: 10%;
+    top: 9.5em;
+  }
+  .header__nav {
+    font-size: 1.6em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    height: 25em;
+  }
+  .header__logo {
+    top: 6em;
+  }
+  .header__nav {
+    top: 14em;
+    font-size: 1.3em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header {
+    height: 20.874em;
+  }
+  .header__logo {
+    top: 4.5em;
+  }
+  .header__nav {
+    font-size: 1.2em;
+    top: 12em;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .header {
+    height: 16.687em;
+  }
+  .header__logo {
+    width: 40%;
+    top: 2.5em;
+    left: 5%;
+  }
+  .header__nav {
+    font-size: 1.1em;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .header {
+    height: 13.5em;
+    background: #000;
+  }
+  .header__logo {
+    width: 70%;
+    top: 0.8em;
+    left: 15%;
+  }
+  .header__nav {
+    top: 9.5em;
+  }
+}
+
+/* Refonte-Portfolio
+ *
+ * /sass/components/presentation.scss - basic styles for section presentation
+ *
+ * coded by Anne
+ * started at 22/09/2016
+ */
+.presentation {
+  position: relative;
+}
+
+.presentation__figure {
+  width: 33%;
+  margin: 5em 0 5em 20.48%;
+}
+
+.presentation__img {
+  width: 100%;
+}
+
+.presentation__title {
+  background: #EFEFE5;
+  padding: 1em;
+  font-size: 2em;
+  position: absolute;
+  top: 1.7em;
+  left: 43.05%;
+}
+
+.presentation__title--big {
+  font-size: 2.5em;
+}
+
+.presentation__title--deleted {
+  font-size: .8em;
+  text-decoration: line-through;
+}
+
+.presentation__bloc {
+  width: 35.41%;
+  display: inline-block;
+  vertical-align: top;
+  margin: 5em auto 0;
+}
+
+.presentation__bloc:nth-of-type(1) {
+  margin-right: 5%;
+  margin-left: 11.944%;
+  padding-bottom: 5em;
+}
+
+.presentation__bloc:nth-of-type(2) {
+  padding-bottom: 5em;
+}
+
+.presentation__text {
+  font-size: 1.1em;
+}
+
+.background {
+  background-color: #DFDDCE;
+}
+
+@media screen and (max-width: 1200px) {
+  .presentation__title {
+    font-size: 1.8em;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .presentation__figure {
+    width: 40%;
+  }
+  .presentation__title {
+    padding: 1em;
+    font-size: 1.8em;
+    position: absolute;
+    top: 1.7em;
+    left: 50%;
+  }
+  .presentation__title--big {
+    font-size: 2.4em;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .presentation__title {
+    font-size: 1.5em;
+  }
+  .presentation__title--big {
+    font-size: 2.2em;
+  }
+  .presentation__title--deleted {
+    font-size: .8em;
+    text-decoration: line-through;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .presentation__figure {
+    width: 60%;
+    margin: 5em 20% 1em;
+  }
+  .presentation__title {
+    display: block;
+    font-size: 1.5em;
+    position: relative;
+    top: 0;
+    left: 0;
+    text-align: center;
+    margin-bottom: 3em;
+  }
+  .presentation__bloc {
+    display: block;
+    width: 75%;
+  }
+  .presentation__bloc:nth-of-type(1) {
+    padding: 5em 0 0;
+  }
+  .presentation__bloc:nth-of-type(2) {
+    padding: 0 0 5em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .presentation__figure {
+    width: 70%;
+    margin: 5em 15% 1em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .presentation__figure {
+    width: 55%;
+    margin: 5em 22.5% 1em;
+  }
+  .presentation__title {
+    font-size: 1.1em;
+    margin-bottom: 5em;
+  }
+  .presentation__bloc {
+    display: block;
+    width: 80%;
+  }
+  .presentation__bloc:nth-of-type(1) {
+    padding: 5em 0 0;
+  }
+  .presentation__bloc:nth-of-type(2) {
+    padding: 0 0 5em;
+  }
+}
+
+/* Refonte-Portfolio
+ *
+ * /sass/components/projets.scss - basic styles for section projets
+ *
+ * coded by Anne
+ * started at 22/09/2016
+ */
+.projets__list {
+  width: 100%;
+}
+
+.projets__single {
+  display: inline-block;
+  width: 33%;
+  height: 18em;
+  -webkit-background-size: cover;
+  background-size: cover;
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+  -moz-filter: grayscale(1);
+  -o-filter: grayscale(1);
+  -ms-filter: grayscale(1);
+  transition: .3s ease;
+}
+
+.projets__single--title {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 3em;
+  width: 100%;
+  text-align: center;
+  margin: 2.5em 0;
+  color: #DFDDCE;
+  text-shadow: 2px 2px 2px #000;
+}
+
+.projets__single:hover {
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+  -moz-filter: grayscale(0);
+  -o-filter: grayscale(0);
+  -ms-filter: grayscale(0);
+}
+
+.projets__single:nth-of-type(1) {
+  background: url(../assets/images/baobab.jpg) center no-repeat;
+}
+
+.projets__single:nth-of-type(3) {
+  background: url(../assets/images/kdna.jpg) center no-repeat;
+}
+
+.projets__single:nth-of-type(2) {
+  background: url(../assets/images/cv-linkedin.jpg) center no-repeat;
+}
+
+@media screen and (max-width: 1024px) {
+  .projets__single {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .projets__single {
+    width: 100%;
+  }
+}
+
+/* Refonte-Portfolio
+ *
+ * /sass/components/header.scss - basic styles for header
+ *
+ * coded by Anne
+ * started at 22/09/2016
+ */
+.projects__list {
+  width: 60%;
+  margin: 5em auto 8em;
+}
+
+.projects__single {
+  position: relative;
+  margin-bottom: 5em;
+}
+
+.projects__figure {
+  display: inline-block;
+  width: 100%;
+}
+
+.projects__img {
+  display: inline-block;
+  width: 50%;
+}
+
+.projects__bloc {
+  background: #EFEFE5;
+  padding: 2em;
+  position: absolute;
+  top: 8em;
+  left: 40%;
+}
+
+.projects__title {
+  font-size: 2em;
+}
+
+.projects__more {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #59564E;
+  display: inline-block;
+  padding: 1em 0 .2em;
+  border-bottom: 1px solid #EFEFE5;
+  -webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -ms-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+}
+
+.projects__more:hover {
+  border-bottom: 1px solid #59564E;
+}
+
+.projects__single:nth-child(even) .projects__img {
+  margin-left: 50%;
+}
+
+.projects__single:nth-child(even) .projects__bloc {
+  left: 25%;
+}
+
+@media screen and (max-width: 1024px) {
+  .projects__bloc {
+    top: 5em;
+  }
+  .projects__single:nth-child(even) .projects__bloc {
+    left: 15%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .projects__list {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .projects__bloc {
+    top: 4em;
+  }
+  .projects__single:nth-child(even) .projects__bloc {
+    left: 5%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .projects__figure {
+    display: block;
+  }
+  .projects__img {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .projects__bloc {
+    width: 80%;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .projects__single:nth-child(even) .projects__img {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .projects__title {
+    font-size: 1.3em;
+  }
+}
+
+/* Refonte-Portfolio
+ *
+ * /sass/components/cv.scss - basic styles for cv page
+ *
+ * coded by Anne
+ * started at 22/09/2016
+ */
+.cv {
+  width: 70%;
+  margin: 5em auto;
+}
+
+.cv__figure {
+  display: inline-block;
+  width: 40%;
+  margin-right: 10%;
+  vertical-align: middle;
+}
+
+.cv__img {
+  width: 100%;
+}
+
+.cv__infos {
+  display: inline-block;
+  width: 30%;
+  line-height: 2em;
+  vertical-align: middle;
+}
+
+.cv__sectionTitle {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.cv__list-title {
+  font-size: 1.6em;
+  margin: 1em 0 0.6em;
+}
+
+.cv__list-item {
+  display: inline-block;
+}
+
+.cv__list-item + .cv__list-item {
+  padding-left: 6%;
+}
+
+.cv__git {
+  display: block;
+  width: 20%;
+  margin: 5em auto;
+  text-align: center;
+  text-decoration: none;
+  color: #59564E;
+}
+
+.cv__git--logo {
+  display: block;
+  text-align: center;
+  margin-bottom: 0.2em;
+}
+
+.cv__git:hover {
+  color: #6d644b;
+}
+
+.cv__git:after {
+  content: '';
+  display: block;
+  margin: 0.1em auto 0;
+  height: 0.125em;
+  width: 0px;
+  background: transparent;
+  transition: width .3s ease, background-color .5s ease;
+}
+
+.cv__git:hover:after {
+  width: 50%;
+  background: #6d644b;
+}
+
+.infos__item--mail {
+  text-decoration: none;
+  color: #59564E;
+}
+
+.infos__item--mail:after {
+  content: '';
+  display: block;
+  margin: 0.1em auto 0;
+  height: 0.125em;
+  width: 0px;
+  background: transparent;
+  transition: width .3s ease, background-color .5s ease;
+}
+
+.infos__item--mail:hover:after {
+  width: 100%;
+  background: #59564E;
+}
+
+.experience, .formation {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.experience {
+  width: 35%;
+}
+
+.formation {
+  width: 60%;
+}
+
+.columns, .competences, .loisirs {
+  width: 70%;
+  margin: 0 auto 5em;
+}
+
+.item {
+  margin-bottom: 0.8em;
+}
+
+.item__title {
+  font-weight: bold;
+  font-size: 1.3em;
+  display: block;
+}
+
+.item__date {
+  display: block;
+}
+
+@media screen and (max-width: 1200px) {
+  .cv__figure {
+    width: 30%;
+  }
+  .cv__infos {
+    width: 50%;
+  }
+  .cv__list-item {
+    display: inline-block;
+    width: 45%;
+    margin-bottom: 1em;
+  }
+  .cv__list-item + .cv__list-item {
+    padding-left: 0;
+  }
+  .experience {
+    width: 35%;
+    margin-right: 10%;
+  }
+  .formation {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .experience {
+    width: 35%;
+    margin-right: 10%;
+  }
+  .formation {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .experience {
+    width: 100%;
+  }
+  .formation {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .cv__figure {
+    width: 70%;
+    display: block;
+    margin-bottom: 2em;
+  }
+  .cv__infos {
+    width: 100%;
+    display: block;
+  }
+  .cv__list-item {
+    display: block;
+    margin-bottom: 0.6em;
+    width: 100%;
+  }
+}
+
+/* Refonte-Portfolio
+ *
+ * /sass/components/single-project.scss - basic styles for a project
+ *
+ * coded by Anne
+ * started at 22/09/2016
+ */
+.single-project {
+  width: 60%;
+  margin: 5em auto;
+}
+
+.single-project__title {
+  font-size: 2em;
+  margin-bottom: 0.6em;
+}
+
+.single-project__type {
+  display: block;
+  font-size: 0.5em;
+}
+
+.single-project__text {
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.single-project__figure {
+  display: inline-block;
+  margin-left: 2%;
+  width: 35%;
+  vertical-align: top;
+}
+
+.single-project__img {
+  width: 100%;
+}
+
+.single-project__button {
+  display: block;
+  width: 40%;
+  margin: 2em auto;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.single-project__link {
+  text-decoration: none;
+  color: #59564E;
+  display: inline-block;
+}
+
+.single-project__link:after {
+  content: '';
+  display: block;
+  margin: 0.1em auto 0;
+  height: 0.125em;
+  width: 0px;
+  background: transparent;
+  transition: width .3s ease, background-color .5s ease;
+}
+
+.single-project__link:hover:after {
+  width: 100%;
+  background: #59564E;
+}
+
+p {
+  margin-bottom: 0.8em;
+}
+
+/* Refonte-Portfolio
+ *
+ * /sass/components/footer.scss - basic styles for footer
+ *
+ * coded by Anne
+ * started at 22/09/2016
+ */
+.footer {
+  background: transparent url(../assets/images/bg-footer.jpg) center no-repeat;
+  background-size: cover;
+  height: 30em;
+  width: 100%;
+  color: white;
+  padding: 2em 0 5em;
+}
+
+.footer__title {
+  font-size: 3.375em;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.footer__list {
+  font-size: 1.5em;
+  width: 30%;
+  margin: 2em auto;
+}
+
+.footer__info {
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.footer__link {
+  display: block;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+
+.footer__link:after {
+  content: '';
+  display: block;
+  margin: 0.625em auto 0;
+  height: 0.125em;
+  width: 0px;
+  background: transparent;
+  transition: width .3s ease, background-color .5s ease;
+}
+
+.footer__link:hover:after {
+  width: 80%;
+  background: white;
+}
+
+@media screen and (max-width: 1113px) {
+  .footer__phone {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1113px) {
+  .footer__title {
+    font-style: 2.5em;
+  }
+  .footer__list {
+    width: 40%;
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .footer__title {
+    font-size: 2.5em;
+    text-align: center;
+  }
+  .footer__list {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .footer__title {
+    font-size: 2em;
+  }
+  .footer__list {
+    width: 80%;
+    font-size: 1.1em;
+  }
+}
+
+/* Refonte-Portfolio
+ *
+ * /sass/components/wp-content.scss - basic styles for the_content()
+ *
+ * coded by Anne
+ * started at 26/12/2016
+ */
+.single-project > p {
+  margin-bottom: 1.5em;
+  line-height: 1.5;
+}
+
+.alignleft {
+  float: left;
+  margin: .3em 3% 1.5em 0;
+}
+
+.alignright {
+  float: right;
+  margin: .3em 0 1.5em 3%;
+}

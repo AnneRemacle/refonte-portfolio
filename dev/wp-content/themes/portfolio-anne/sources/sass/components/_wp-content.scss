@@ -1,0 +1,22 @@
+/* Refonte-Portfolio
+ *
+ * /sass/components/wp-content.scss - basic styles for the_content()
+ *
+ * coded by Anne
+ * started at 26/12/2016
+ */
+
+.single-project > p {
+    margin-bottom: 1.5em;
+    line-height: 1.5;
+}
+
+.alignleft {
+    float: left;
+    margin: .3em 3% 1.5em 0;
+}
+
+.alignright {
+    float: right;
+    margin: .3em 0 1.5em 3%;
+}

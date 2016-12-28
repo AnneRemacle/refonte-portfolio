@@ -1,0 +1,67 @@
+/* Refonte-Portfolio
+ *
+ * /sass/components/single-project.scss - basic styles for a project
+ *
+ * coded by Anne
+ * started at 22/09/2016
+ */
+
+ .single-project {
+    width: 60%;
+    margin: 5em auto;
+    &__title {
+        font-size: 2em;
+        margin-bottom: 0.6em;
+    }
+    &__type {
+        display: block;
+        font-size: 0.5em;
+    }
+    &__text {
+        width: 50%;
+        display: inline-block;
+        vertical-align: top;
+
+    }
+    &__figure {
+        display: inline-block;
+        margin-left: 2%;
+        width: 35%;
+        vertical-align: top;
+
+    }
+    &__img {
+        width: 100%;
+    }
+    &__button {
+        display: block;
+        width: 40%;
+        margin: 2em auto;
+        font-size: 1.5em;
+        text-align: center;
+    }
+    &__link {
+        text-decoration: none;
+        color: $textColor;
+        display: inline-block;
+
+    }
+    &__link:after {
+        content: '';
+        display: block;
+        margin: 0.1em auto 0;
+        height: 0.125em;
+        width: 0px;
+        background: transparent;
+        transition: width .3s ease, background-color .5s ease;
+    }
+
+    &__link:hover:after {
+        width: 100%;
+        background: $textColor;
+    }
+ }
+
+ p {
+    margin-bottom: 0.8em;
+ }
