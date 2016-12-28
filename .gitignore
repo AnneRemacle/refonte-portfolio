@@ -1,3 +1,16 @@
 resources
+site/
+img/
+**/*.sketch
+
 node_modules
-dev
+.sass-cache
+
+dev/*
+!dev/wp-content/
+dev/wp-content/*
+!dev/wp-content/themes/
+dev/wp-content/themes/*
+!dev/wp-content/themes/portfolio-anne/
+dev/wp-content/themes/portfolio-anne/.sass-cache
+dev/wp-content/themes/portfolio-anne/node_modules
