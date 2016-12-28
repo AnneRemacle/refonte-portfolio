@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Refonte-Portfolio
  *
  * /sass/styles.scss - Main stylesheet
@@ -690,190 +691,158 @@ body {
  * started at 22/09/2016
  */
 .cv {
-  width: 70%;
+  width: 90%;
   margin: 5em auto;
 }
 
-.cv__figure {
+.cv__name {
+  font-size: 1.8em;
+  padding-bottom: .4em;
+  border-bottom: 1px solid #59564E;
+  margin-bottom: .8em;
+}
+
+.cv__head {
+  width: 30%;
   display: inline-block;
-  width: 40%;
-  margin-right: 10%;
-  vertical-align: middle;
+  margin-right: 3%;
+  vertical-align: top;
+}
+
+.cv__figure {
+  width: 80%;
+  margin-bottom: 2em;
 }
 
 .cv__img {
   width: 100%;
 }
 
-.cv__infos {
-  display: inline-block;
-  width: 30%;
-  line-height: 2em;
-  vertical-align: middle;
+.cv__sectionTitle {
+  font-size: 1.8em;
+  padding-bottom: .4em;
+  margin-bottom: 1em;
+  border-bottom: 1px solid #59564E;
 }
 
-.cv__sectionTitle {
-  font-size: 2em;
+.cv__list--item {
   margin-bottom: 1em;
 }
 
-.cv__list-title {
-  font-size: 1.6em;
-  margin: 1em 0 0.6em;
-}
-
-.cv__list-item {
-  display: inline-block;
-}
-
-.cv__list-item + .cv__list-item {
-  padding-left: 6%;
-}
-
-.cv__git {
-  display: block;
-  width: 20%;
-  margin: 5em auto;
+.cv__list--title {
   text-align: center;
-  text-decoration: none;
+  font-size: 1.3em;
+  margin-bottom: .75em;
+}
+
+.infos__item {
+  display: block;
+  margin-bottom: 1em;
+}
+
+.infos__item--icon {
+  margin-right: 3%;
+  font-size: 1.2em;
+}
+
+a.infos__item {
   color: #59564E;
-}
-
-.cv__git--logo {
-  display: block;
-  text-align: center;
-  margin-bottom: 0.2em;
-}
-
-.cv__git:hover {
-  color: #6d644b;
-}
-
-.cv__git:after {
-  content: '';
-  display: block;
-  margin: 0.1em auto 0;
-  height: 0.125em;
-  width: 0px;
-  background: transparent;
-  transition: width .3s ease, background-color .5s ease;
-}
-
-.cv__git:hover:after {
-  width: 50%;
-  background: #6d644b;
-}
-
-.infos__item--mail {
-  text-decoration: none;
-  color: #59564E;
-}
-
-.infos__item--mail:after {
-  content: '';
-  display: block;
-  margin: 0.1em auto 0;
-  height: 0.125em;
-  width: 0px;
-  background: transparent;
-  transition: width .3s ease, background-color .5s ease;
-}
-
-.infos__item--mail:hover:after {
-  width: 100%;
-  background: #59564E;
-}
-
-.experience, .formation {
-  display: inline-block;
-  vertical-align: top;
-}
-
-.experience {
-  width: 35%;
-}
-
-.formation {
-  width: 60%;
-}
-
-.columns, .competences, .loisirs {
-  width: 70%;
-  margin: 0 auto 5em;
-}
-
-.item {
-  margin-bottom: 0.8em;
 }
 
 .item__title {
-  font-weight: bold;
   font-size: 1.3em;
   display: block;
+  margin-bottom: .2em;
 }
 
 .item__date {
   display: block;
+  font-size: .9em;
+  margin-bottom: .5em;
 }
 
-@media screen and (max-width: 1200px) {
-  .cv__figure {
-    width: 30%;
-  }
-  .cv__infos {
-    width: 50%;
-  }
-  .cv__list-item {
-    display: inline-block;
-    width: 45%;
-    margin-bottom: 1em;
-  }
-  .cv__list-item + .cv__list-item {
-    padding-left: 0;
-  }
-  .experience {
-    width: 35%;
-    margin-right: 10%;
-  }
-  .formation {
-    width: 40%;
-  }
+.item__name:after {
+  font-family: "FontAwesome";
+  float: right;
+  margin-right: 40%;
+  font-size: .8em;
+  line-height: 2em;
 }
 
-@media screen and (max-width: 1000px) {
-  .experience {
-    width: 35%;
-    margin-right: 10%;
-  }
-  .formation {
-    width: 50%;
-  }
+.item__name {
+  font-size: 1.2em;
 }
 
-@media screen and (max-width: 900px) {
-  .experience {
-    width: 100%;
-  }
-  .formation {
-    width: 100%;
-  }
+.item__name--html:after {
+  content: "    ";
 }
 
-@media screen and (max-width: 800px) {
-  .cv__figure {
-    width: 70%;
-    display: block;
-    margin-bottom: 2em;
-  }
-  .cv__infos {
-    width: 100%;
-    display: block;
-  }
-  .cv__list-item {
-    display: block;
-    margin-bottom: 0.6em;
-    width: 100%;
-  }
+.item__name--css:after {
+  content: "    ";
+}
+
+.item__name--js:after {
+  content: "    ";
+}
+
+.item__name--php:after {
+  content: "    ";
+}
+
+.item__name--wp:after {
+  content: "    ";
+}
+
+.item__name--ps:after {
+  content: "    ";
+}
+
+.item__name--ai:after {
+  content: "    ";
+}
+
+.item__name--id:after {
+  content: "    ";
+}
+
+.item__name--sketch:after {
+  content: "    ";
+}
+
+.item__name--sublime:after {
+  content: "    ";
+}
+
+.item__name--atom:after {
+  content: "    ";
+}
+
+.second {
+  width: 65%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.columns {
+  margin-bottom: 5em;
+}
+
+.experience, .formation, .competences, .loisirs {
+  width: 47%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.experience, .competences {
+  margin-right: 5%;
+}
+
+.competences__list {
+  margin-bottom: 2em;
+}
+
+.loisirs__list-item {
+  margin-bottom: .75em;
 }
 
 /* Refonte-Portfolio

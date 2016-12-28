@@ -7,188 +7,146 @@
  */
 
 .cv {
-    width: 70%;
+    width: 90%;
     margin: 5em auto;
 
-    &__figure {
+    &__name {
+        font-size: 1.8em;
+        padding-bottom: .4em;
+        border-bottom: 1px solid $textColor;
+        margin-bottom: .8em;
+    }
+
+    &__head {
+        width: 30%;
         display: inline-block;
-        width: 40%;
-        margin-right: 10%;
-        vertical-align: middle;
+        margin-right: 3%;
+        vertical-align: top;
+    }
+    &__figure {
+        width: 80%;
+        margin-bottom: 2em;
     }
     &__img {
         width: 100%;
     }
-    &__infos {
-        display: inline-block;
-        width: 30%;
-        line-height: 2em;
-        vertical-align: middle;  
-    }
+
     &__sectionTitle {
-        font-size: 2em;
+        font-size: 1.8em;
+        padding-bottom: .4em;
         margin-bottom: 1em;
+        border-bottom: 1px solid $textColor;
     }
     &__list {
-        &-title {
-            font-size: 1.6em;
-            margin: 1em 0 0.6em;
+        &--item {
+            margin-bottom: 1em;
         }
-        &-item {
-            display: inline-block;
-        }
-        &-item + &-item {
-            padding-left: 6%;
-        }
-    }
-    &__git {
-        display: block;
-        width: 20%;
-        margin: 5em auto;
-        text-align: center;
-        text-decoration: none;
-        color: $textColor;
-        
-        &--logo {
-            display: block;
+        &--title {
             text-align: center;
-            margin-bottom: 0.2em;
+            font-size: 1.3em;
+            margin-bottom: .75em;
         }
-    }
-    &__git:hover {
-        color: #6d644b;
-    }
-    &__git:after {
-        content: '';
-        display: block;
-        margin: 0.1em auto 0;
-        height: 0.125em;
-        width: 0px;
-        background: transparent;
-        transition: width .3s ease, background-color .5s ease;
-        }
-
-    &__git:hover:after {
-        width: 50%;
-        background: #6d644b;
     }
 }
 
 .infos {
     &__item {
-        &--mail {
-            text-decoration: none;
-            color: $textColor;
-        }
-
-        &--mail:after {
-        content: '';
         display: block;
-        margin: 0.1em auto 0;
-        height: 0.125em;
-        width: 0px;
-        background: transparent;
-        transition: width .3s ease, background-color .5s ease;
-        }
-
-        &--mail:hover:after {
-            width: 100%;
-            background: $textColor;
+        margin-bottom: 1em;
+        &--icon {
+            margin-right: 3%;
+            font-size: 1.2em;
         }
     }
 }
 
-.experience, .formation {
-    display: inline-block;
-    vertical-align: top;
-}
-.experience {
-    width: 35%;
-}
-.formation {
-    width: 60%;
-}
-.columns, .competences, .loisirs {
-    width: 70%;
-    margin: 0 auto 5em;
+a.infos__item {
+    color: $textColor;
 }
 
 .item {
-    margin-bottom: 0.8em;
-
     &__title {
-        font-weight: bold;
         font-size: 1.3em;
-        display: block;      
+        display: block;
+        margin-bottom: .2em;
     }
     &__date {
-        display: block;  
+        display: block;
+        font-size: .9em;
+        margin-bottom: .5em;
+    }
+    &__name:after {
+        font-family: "FontAwesome";
+        float: right;
+        margin-right: 40%;
+        font-size: .8em;
+        line-height: 2em;
+
+    }
+    &__name {
+        font-size: 1.2em;
+        &--html:after {
+            content:"    ";
+        }
+        &--css:after {
+            content:"    ";
+        }
+        &--js:after {
+            content:"    ";
+        }
+        &--php:after {
+            content:"    ";
+        }
+        &--wp:after {
+            content:"    ";
+        }
+        &--ps:after {
+            content:"    ";
+        }
+        &--ai:after {
+            content:"    ";
+        }
+        &--id:after {
+            content:"    ";
+        }
+        &--sketch:after {
+            content:"    ";
+        }
+        &--sublime:after {
+            content:"    ";
+        }
+        &--atom:after {
+            content:"    ";
+        }
     }
 }
 
-@media screen and (max-width: 1200px) { 
-    .cv {
-        &__figure {
-            width: 30%;
-        }
-        &__infos {
-            width: 50%; 
-        }
-        &__list {
-            &-item {
-                display: inline-block;
-                width: 45%;
-                margin-bottom: 1em;
-            }
-            &-item + &-item {
-                padding-left: 0;
-            }
-        }
-    }
-    .experience {
-    width: 35%;
-    margin-right: 10%
-    }
-    .formation {
-        width: 40%;
+.second {
+    width: 65%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.columns {
+    margin-bottom: 5em;
+}
+.experience, .formation, .competences, .loisirs {
+    width: 47%;
+    display: inline-block;
+    vertical-align: top;
+}
+.experience, .competences {
+    margin-right: 5%;
+}
+
+.competences {
+    &__list {
+        margin-bottom: 2em;
     }
 }
-@media screen and (max-width: 1000px) { 
-    
-    .experience {
-    width: 35%;
-    margin-right: 10%
-    }
-    .formation {
-        width: 50%;
-    }
-}
-@media screen and (max-width: 900px) { 
-    .experience {
-    width: 100%;
-    }
-    .formation {
-        width: 100%;
-    }
-}
-@media screen and (max-width: 800px) { 
-    .cv {
-        &__figure {
-            width: 70%;
-            display: block;
-            margin-bottom: 2em;
-        }
-        &__infos {
-            width: 100%;
-            display: block;
-              
-        }
-        &__list {
-            &-item {
-                display: block;
-                margin-bottom: 0.6em;
-                width: 100%;
-            }
-        }
+
+.loisirs {
+    &__list-item {
+        margin-bottom: .75em;
     }
 }
