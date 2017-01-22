@@ -20,3 +20,18 @@
     float: right;
     margin: .3em 0 1.5em 3%;
 }
+
+@media screen and (max-width: 860px) {
+    .alignleft, .alignright {
+        float: none;
+        display: block;
+        margin: .3em auto 1.5em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .alignleft, .alignright {
+        width: 80%;
+        height: auto;
+    }
+}
