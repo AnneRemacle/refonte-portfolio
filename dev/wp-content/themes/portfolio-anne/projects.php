@@ -10,7 +10,7 @@
 <section class="content projects">
     <h2 class="sro" role="heading" aria-level="2">Projets réalisés par Anne Remacle</h2>
     <ul class="projects__list">
-    <?php $posts = new WP_Query( [ 'orderby' => 'date', 'order' => 'ASC', 'post_type' => 'project' ] ); ?>
+    <?php $posts = new WP_Query( [ 'orderby' => 'date', 'order' => 'DESC', 'post_type' => 'project' ] ); ?>
     <?php if ( $posts -> have_posts() ):
         while ( $posts -> have_posts() ):
             $posts -> the_post(); ?>
