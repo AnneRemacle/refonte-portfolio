@@ -6,6 +6,7 @@
         <meta name="descritpion" content="Bienvenue sur le portfolio de Anne Remacle, étudiante en 3e année en Techniques Infographiques option Web à la HEPL.">
         <meta name="keywords" content="portfolio, web, Anne Remacle" />
         <meta author="Anne-Remacle">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
         <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
