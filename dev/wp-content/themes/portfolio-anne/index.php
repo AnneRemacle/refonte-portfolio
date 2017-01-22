@@ -40,10 +40,10 @@ endif;
             <h2 class="section__title sro">Mes trois derniers projets</h2>
             <ul class="projets__list">
                 <li data-aos="fade-up" class="projets__single">
-                    <a class="projets__single--title" href="project/sur-un-baobab" title="Voir la fiche technique du projet sur un Baobab">Sur un Baobab</a>
+                    <a class="projets__single--title" href="project/espace-p" title="Voir la fiche technique du projet Espace P">Espace P…</a>
                 </li>
                 <li data-aos="fade-up" class="projets__single">
-                    <a class="projets__single--title" href="project/projet-cv-linkedin" title="Voir la fiche technique du projet CV Linkedin">CV Linkedin</a>
+                    <a class="projets__single--title" href="project/csi-angleur" title="Voir la fiche technique du projet CSI Angleur">CSI Angleur</a>
                 </li>
                 <li data-aos="fade-up" class="projets__single">
                     <a class="projets__single--title" href="project/jeu-cadenas" title="Voir la fiche technique du projet KDNA">KDNA</a>

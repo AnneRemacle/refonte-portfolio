@@ -531,10 +531,11 @@ body {
  */
 .projets__list {
   width: 100%;
+  display: table;
 }
 
 .projets__single {
-  display: inline-block;
+  display: table-cell;
   width: 33%;
   height: 18em;
   -webkit-background-size: cover;
@@ -553,7 +554,7 @@ body {
   font-size: 3em;
   width: 100%;
   text-align: center;
-  margin: 2.5em 0;
+  padding: 2.5em 0;
   color: #DFDDCE;
   text-shadow: 2px 2px 2px #000;
 }
@@ -567,7 +568,7 @@ body {
 }
 
 .projets__single:nth-of-type(1) {
-  background: url(../assets/images/baobab.jpg) center no-repeat;
+  background: url(../assets/images/espacep.jpg) center no-repeat;
 }
 
 .projets__single:nth-of-type(3) {
@@ -575,12 +576,16 @@ body {
 }
 
 .projets__single:nth-of-type(2) {
-  background: url(../assets/images/cv-linkedin.jpg) center no-repeat;
+  background: url(../assets/images/csi.jpg) center no-repeat;
 }
 
 @media screen and (max-width: 1024px) {
+  .projets__list {
+    display: block;
+  }
   .projets__single {
     width: 100%;
+    display: inline-block;
   }
 }
 
