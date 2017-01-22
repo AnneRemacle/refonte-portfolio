@@ -2,6 +2,7 @@ resources
 site/
 img/
 **/*.sketch
+.DS_Store
 
 node_modules
 .sass-cache
