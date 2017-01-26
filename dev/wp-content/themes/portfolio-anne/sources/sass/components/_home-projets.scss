@@ -10,19 +10,15 @@
  	&__list {
 		width: 100%;
         display: table;
+        margin-bottom: -0.3em;
  	}
  	&__single {
- 		display: table-cell;
- 		width: 33%;
- 		height: 18em;
- 		-webkit-background-size: cover;
- 		background-size: cover;
- 		filter: grayscale(1);
-        -webkit-filter: grayscale(1);
-        -moz-filter: grayscale(1);
-        -o-filter: grayscale(1);
-        -ms-filter: grayscale(1);
+ 		display: inline-block;
+ 		width: 33.33%;
+ 		height: 17.7em;
         transition: .3s ease;
+        position: relative;
+        cursor: pointer;
 		&--title {
 			display: inline-block;
 			text-decoration: none;
@@ -30,25 +26,29 @@
 			width: 100%;
 			text-align: center;
 			padding: 2.5em 0;
-			color: $secondBgColor;
+			color: white;
 			text-shadow: 2px 2px 2px #000;
+            position: absolute;
+            top: 0;
+            right: 0;
 		}
  	}
- 	&__single:hover {
-  		filter: grayscale(0);
-        -webkit-filter: grayscale(0);
-        -moz-filter: grayscale(0);
-        -o-filter: grayscale(0);
-        -ms-filter: grayscale(0);
- 	}
- 	&__single:nth-of-type(1) {
-		background: url(../assets/images/espacep.jpg) center no-repeat;
- 	}
- 	&__single:nth-of-type(3) {
- 		background: url(../assets/images/kdna.jpg) center no-repeat;
- 	}
- 	&__single:nth-of-type(2) {
- 		background: url(../assets/images/csi.jpg) center no-repeat;
+    &__figure {
+        width: 100%;
+        overflow: hidden;
+        height: 18em;
+        &--img {
+            filter: grayscale(1) blur(4px);
+            -webkit-filter: grayscale(1) blur(4px);
+            -moz-filter: grayscale(1) blur(4px);
+            -ms-filter: grayscale(1) blur(4px);
+        }
+    }
+    &__single:hover .projets__figure--img {
+          		filter: grayscale(0) blur(4px);
+                -webkit-filter: grayscale(0) blur(4px);
+                -moz-filter: grayscale(0) blur(4px);
+                -ms-filter: grayscale(0) blur(4px);
  	}
  }
 

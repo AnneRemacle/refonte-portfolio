@@ -33,9 +33,42 @@
  		text-decoration: none;
  		color: white;
         text-align: center;
+        &--email:before {
+            content:'';
+            color: white;
+            font-family: 'FontAwesome';
+            margin-right: 3%;
+        }
 
  	}
-
+    &__phone {
+        display: block;
+    }
+    &__phone:before {
+            content:'';
+            font-family: 'FontAwesome';
+            margin-right: 3%;
+    }
+    &__github {
+        text-indent: -9999px;
+        display: inline-block;
+        vertical-align: middle;
+        background: transparent url('../assets/images/github.png') center no-repeat;
+        width: 15%;
+        height: 3em;
+        background-size: cover;
+    }
+    &__linkedin {
+        text-indent: -9999px;
+        display: inline-block;
+        vertical-align: middle;
+        background: transparent url('../assets/images/linkedin.png') center no-repeat;
+        width: 20%;
+        background-size: contain;
+        width: 15%;
+        height: 3em;
+        margin-right: 10%;
+    }
  	&__link:after {
 		content: '';
 		display: block;

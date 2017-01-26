@@ -8,10 +8,10 @@
 
  .presentation {
  	position: relative;
- 	
+
  	&__figure {
 		width: 33%;
-		margin: 5em 0 5em 20.48%;
+		margin: 5em 0 12em 20.48%;
  	}
  	&__img {
 		width: 100%;
@@ -33,27 +33,23 @@
  		}
  	}
  	&__bloc {
-		width: 35.41%;
-		display: inline-block;
-		vertical-align: top;
-		margin: 5em auto 0;
+        display: table-cell;
+        width: 33.33%;
+        padding: 0 3%;
  	}
- 	&__bloc:nth-of-type(1) {
- 		margin-right: 5%;
- 		margin-left: 11.944%;
- 		padding-bottom: 5em
- 	}
- 	&__bloc:nth-of-type(2) {
- 		padding-bottom: 5em;
- 	}
- 	&__text {
- 		font-size: 1.1em;
+ 	&__icon {
+        width: 60%;
+        margin: 2em auto;
 
- 	}
+        &--img {
+            width: 100%;
+        }
+    }
  }
 
  .background {
- 	background-color: $secondBgColor;
+ 	background-color: white;
+    padding: 3em 10%;
  }
 
  @media screen and (max-width: 1200px) {
@@ -94,7 +90,7 @@
 				text-decoration: line-through;
 	 		}
  		}
-	}	
+	}
 }
 
 @media screen and (max-width: 768px) {
@@ -112,7 +108,7 @@
 			left: 0;
 			text-align: center;
 			margin-bottom: 3em;
-			
+
 		}
 		&__bloc {
 			display: block;
@@ -161,9 +157,9 @@
 }
 
 @media screen and (max-width: 400px) {
-	
+
 }
 
 @media screen and (max-width: 375px) {
-	
+
 }
