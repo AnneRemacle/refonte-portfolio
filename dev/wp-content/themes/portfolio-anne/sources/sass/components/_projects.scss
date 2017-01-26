@@ -7,6 +7,8 @@
  */
 
  .projects {
+     background: white;
+     padding: 5em 0;
 	&__list {
 		width: 60%;
 		margin: 5em auto 8em;
@@ -47,14 +49,14 @@
 		        transition: all .25s ease;
 	}
 	&__more:hover {
-		border-bottom: 1px solid $textColor;	
+		border-bottom: 1px solid $textColor;
 	}
-	
+
 	&__single:nth-child(even) &__img {
-		margin-left: 50%;	
+		margin-left: 50%;
 	}
 	&__single:nth-child(even) &__bloc {
-		left: 25%;	
+		left: 25%;
 	}
  }
 
@@ -64,7 +66,7 @@
 			top: 5em;
 		}
 		&__single:nth-child(even) &__bloc {
-			left: 15%;	
+			left: 15%;
 		}
 	}
 }
@@ -73,7 +75,7 @@
 	.projects {
 		&__list {
 			width: 80%;
-		}	
+		}
 	}
 }
 
@@ -83,7 +85,7 @@
 			top: 4em;
 		}
 		&__single:nth-child(even) &__bloc {
-			left: 5%;	
+			left: 5%;
 		}
 	}
 }
@@ -104,10 +106,10 @@
 			top:0;
 			left:0;
 			margin: 0 auto;
-			text-align: center;	
+			text-align: center;
 		}
 		&__single:nth-child(even) &__img {
-		margin: 0 auto;	
+		margin: 0 auto;
 	}
 	}
 }

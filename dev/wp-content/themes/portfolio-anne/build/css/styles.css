@@ -596,6 +596,11 @@ body {
  * coded by Anne
  * started at 22/09/2016
  */
+.projects {
+  background: white;
+  padding: 5em 0;
+}
+
 .projects__list {
   width: 60%;
   margin: 5em auto 8em;
