@@ -11,6 +11,8 @@
         $('.cv__head').attr( 'data-aos', 'fade-up' );
         $('.cv-section').attr( 'data-aos', 'fade-up' );
 
+        $('.projects__single').attr( 'data-aos', 'fade-up' );
+
 
     });
 

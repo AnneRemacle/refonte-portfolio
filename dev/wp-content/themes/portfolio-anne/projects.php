@@ -16,7 +16,7 @@
             $posts -> the_post(); ?>
 
 
-                <li class="projects__single project" data-aos="fade-up">
+                <li class="projects__single project">
                     <?php $image = get_field('presentation_img'); ?>
                     <figure class="projects__figure">
                         <img src="<?php echo $image['url']; ?>" alt="Capture d'écran du projet <?php the_field('project_title'); ?>" class="projects__img" />
