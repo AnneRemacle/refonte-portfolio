@@ -44,21 +44,11 @@
         text-decoration: none;
         color: $textColor;
         display: inline-block;
-
+        padding: .5em 1em;
+        border: 1px solid $textColor;
     }
-    &__link:after {
-        content: '';
-        display: block;
-        margin: 0.1em auto 0;
-        height: 0.125em;
-        width: 0px;
-        background: transparent;
-        transition: width .3s ease, background-color .5s ease;
-    }
-
-    &__link:hover:after {
-        width: 100%;
-        background: $textColor;
+    &__link:hover {
+        background: white;
     }
  }
 

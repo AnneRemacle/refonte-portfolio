@@ -22,6 +22,10 @@
             </section>
 
         </footer>
-
+        <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+        <script src="<?php echo get_template_directory_uri() . '/build/script/main.js'; ?>"></script>
+        <script src="<?php echo get_template_directory_uri() . '/build/script/aos.js'; ?>"></script>
+        <script src="https://use.fontawesome.com/a0c221e969.js"></script>
+        
     </body>
 </html>

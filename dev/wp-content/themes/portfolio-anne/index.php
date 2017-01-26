@@ -12,7 +12,7 @@
             the_post(); ?>
 
         <?php $image = get_field('anne_img');?>
-        <figure data-aos="fade-right" class="presentation__figure">
+        <figure class="presentation__figure">
 
             <img class="presentation__img clearfix" src="<?php echo $image['url']; ?>" alt="Photo de Anne Remacle" />
         </figure>
@@ -23,7 +23,7 @@
 
             <?php if( have_rows('presentation') ): ?>
                 <?php while ( have_rows('presentation') ) : the_row(); ?>
-                    <div data-aos="fade-up" class="presentation__bloc">
+                    <div class="presentation__bloc">
                             <?php $image = get_sub_field('icone'); ?>
                             <figure class="presentation__icon">
                                 <img class="presentation__icon--img" src="<?php echo $image['url']; ?>" alt="icone illustrative">
@@ -45,7 +45,7 @@ endif;
     			    <?php if ( $posts -> have_posts() ):
     			        while ( $posts -> have_posts() ):
     			            $posts -> the_post(); ?>
-                <li data-aos="fade-up" class="projets__single">
+                <li class="projets__single">
                     <figure class="projets__figure">
                         <?php $image = get_field('homepage_img'); ?>
                         <img class="projets__figure--img" src="<?php echo $image['url']; ?>" alt="capture d'écran du projet <?php the_field('project_title'); ?>">

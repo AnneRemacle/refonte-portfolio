@@ -9,15 +9,14 @@
     <section class="cv cv-section clearfix">
         <h2 class="sro">Curiculum Vitae de Anne Remacle</h2>
 
-        <section class="cv__head" data-aos="fade-up">
+        <section class="cv__head">
             <h3 class="cv__name">Anne Remacle</h3>
 
             <figure class="cv__figure">
-                <img class="cv__img" src="http://anne-remacle.be/wp-content/uploads/2016/09/portrait.jpg" alt="Portrait de Anne Remacle" />
+                <img class="cv__img" src="http://anne-remacle.be/wp-content/uploads/2016/05/anne.jpg" alt="Portrait de Anne Remacle" />
             </figure>
             <div class="cv__infos infos">
-                <p class="infos__item infos__item--birthdate"><i class="fa fa-gift infos__item--icon"></i> née le 27 juillet 1990</p>
-                <p class="infos__item infos__item--address"><i class="fa fa-envelope infos__item--icon"></i> rue du Pot d'Or 11, 4000 Liège</p>
+                <p class="infos__item infos__item--address"><i class="fa fa-envelope infos__item--icon"></i> réside à Liège</p>
                 <p class="infos__item infos__item--transport"><i class="fa fa-car infos__item--icon"></i> Permis B - Voiture</p>
                 <p class="infos__item infos__item--phone"><i class="fa fa-phone infos__item--icon"></i> 0494/22 50 00</p>
                 <a class="infos__item infos__item--mail" title="envoyer un email à Anne" href="mailto:anne.m.remacle@gmail.com"><i class="fa fa-paper-plane infos__item--icon"></i>anne.m.remacle@gmail.com</a>
@@ -27,7 +26,7 @@
 
         <div class="second">
             <div class="columns">
-                <section class="experience cv-section" data-aos="fade-up">
+                <section class="experience cv-section" >
                     <h3 class="cv__sectionTitle cv__sectionTitle--exp">Expériences</h3>
                     <ul class="cv__list">
                      	<li class="cv__list--item item">
@@ -40,7 +39,7 @@
                      	<li class="cv__list--item item"><strong class="item__title">Secrétaire</strong><span class="item__date"><time datetime="2010">2010</time> - <time datetime="2011">2011</time></span>Étude de M<sup>e</sup> Franchimont, Liège</li>
                     </ul>
                 </section>
-                <section class="formation cv-section" data-aos="fade-up">
+                <section class="formation cv-section" >
                     <h3 class="cv__sectionTitle cv__sectionTitle--formation">Formation</h3>
                     <ul class="cv__list">
                      	<li class="cv__list--item item"><strong class="item__title">Baccalauréat en Techniques infographiques, option Web </strong><span class="item__date"><time datetime="2014">2014</time> - <time datetime="2017">2017</time></span>Haute École de la Province de Liège, HEPL (anciennement INPRES)</li>
@@ -50,7 +49,7 @@
                 </section>
             </div>
             <div class="columns">
-                <section class="competences cv-section" data-aos="fade-up">
+                <section class="competences cv-section" >
                     <h3 class="cv__sectionTitle cv__sectionTitle--comp">Compétences</h3>
                     <section class="competences__list languages">
                         <h4 class="cv__list--title">Langages</h4>
@@ -114,7 +113,7 @@
                     </ul>
                 </section>
                 </section>
-                <section class="loisirs cv-section" data-aos="fade-up">
+                <section class="loisirs cv-section" >
                     <h4 class="cv__sectionTitle cv__sectionTitle--like">Centres d'intérêt</h4>
                     <ul class="loisirs__list">
                      	<li class="loisirs__list-item item">Jeu de rôles grandeur nature</li>

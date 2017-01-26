@@ -27,7 +27,7 @@
     </section>
 
     <div class="single-project__button clearfix">
-        <a href="http://<?php the_field('url_site'); ?>" class="single-project__link">Voir le projet</a> -
+        <a href="http://<?php the_field('url_site'); ?>" class="single-project__link">Voir le projet</a>
         <a href="http://<?php the_field('github_url'); ?>" class="single-project__link" rel="external">Repo Github</a>
     </div>
 
